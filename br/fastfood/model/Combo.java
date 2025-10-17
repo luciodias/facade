@@ -1,7 +1,5 @@
 package br.fastfood.model;
 
-import br.fastfood.facade.ComboFacade;
-
 public class Combo {
 
     private ItemCombo burger;

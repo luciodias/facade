@@ -1,12 +1,10 @@
 package br.fastfood.model;
 
-import br.fastfood.facade.ComboFacade;
-
-public class Sobremesa implements ItemCombo {
+public class Bebida implements ItemCombo {
     private final String nome;
     private final double preco;
 
-    public Sobremesa(String nome, double preco) {
+    public Bebida(String nome, double preco) {
         this.nome = nome;
         this.preco = preco;
     }
@@ -22,7 +20,8 @@ public class Sobremesa implements ItemCombo {
     }
 
     @Override
-    public String toString() {  
+    public String toString() {
         return String.format("%s (R$ %.2f)", nome, preco);
-    }    
+    }
+    
 }

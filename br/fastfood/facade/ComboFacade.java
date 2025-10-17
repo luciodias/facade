@@ -1,9 +1,9 @@
 package br.fastfood.facade;
 
 import br.fastfood.model.Combo;
-import br.fastfood.model.Combo.Burger;
-import br.fastfood.model.Combo.Bebida;;
-import br.fastfood.model.Combo.Sobremesa;
+import br.fastfood.model.Burger;
+import br.fastfood.model.Bebida;
+import br.fastfood.model.Sobremesa;
 
 public class ComboFacade {
     private Combo combo;

@@ -1,6 +1,7 @@
+package br.fastfood.app;
 
 import java.util.Scanner;
-import Combo.Facade.ComboFacade;
+import br.fastfood.facade.ComboFacade;
 
 public class Main {
     public static void main(String[] args) {
