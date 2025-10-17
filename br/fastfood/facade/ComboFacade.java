@@ -1,6 +1,7 @@
 package br.fastfood.facade;
 
 import br.fastfood.model.Combo;
+import br.fastfood.model.ItemCombo;
 import br.fastfood.model.Burger;
 import br.fastfood.model.Bebida;
 import br.fastfood.model.Sobremesa;
@@ -50,15 +51,20 @@ public class ComboFacade {
         }
         
         System.out.println("\n=== Detalhes do Pedido ===");
-        System.out.println(
-            this.combo.getBurger() + "\n" +
-            this.combo.getBebida() + "\n" +
-            this.combo.getSobremesa()
-        );
-        
+        exibirItem("Burger", combo.getBurger());
+        exibirItem("Bebida", combo.getBebida());
+        exibirItem("Sobremesa", combo.getSobremesa());
         System.out.println("==========================");
     }
 
+    /**
+     * Exibe cada item do combo
+     */
+    private void exibirItem(String tipo, ItemCombo item) {
+        System.out.printf("%-12s: %s - R$ %.2f%n", 
+                        tipo, item.getNome(), item.getPreco());
+    }
+    
     /**
      * Retorna o preço total do combo
      * @return preço total
