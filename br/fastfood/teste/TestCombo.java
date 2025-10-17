@@ -1,7 +1,8 @@
 package br.fastfood.teste;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import br.fastfood.model.Bebida;
 import br.fastfood.model.Burger;
