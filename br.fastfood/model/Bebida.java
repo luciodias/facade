@@ -1,6 +1,6 @@
-package Combo.Itens;
+package br.fastfood.model;
 
-import Combo.Iterface.ItemCombo;
+import br.fastfood.facade.ComboFacade;
 
 public class Bebida implements ItemCombo {
     private final String nome;

@@ -1,6 +1,6 @@
-package Combo;
+package br.fastfood.model;
 
-import Combo.Iterface.ItemCombo;
+import br.fastfood.facade.ComboFacade;
 
 public class Combo {
 
