@@ -15,7 +15,7 @@ public class TestSobremesa {
         // Act
         String actualNome = item.getNome();
         // Assert
-        assertEquals(expectedNome, actualNome, "The name of the burger should match the expected value.");
+        assertEquals(expectedNome, actualNome, "The name of the Sobremesa should match the expected value.");
     }
 
     @Test
@@ -26,7 +26,7 @@ public class TestSobremesa {
         // Act
         double actualPreco = item.getPreco();
         // Assert
-        assertEquals(expectedPreco, actualPreco, "The price of the burger should match the expected value.");
+        assertEquals(expectedPreco, actualPreco, "The price of the Sobremesa should match the expected value.");
     }
 
 }
