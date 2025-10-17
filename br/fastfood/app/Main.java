@@ -1,5 +1,6 @@
 package br.fastfood.app;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import br.fastfood.facade.ComboFacade;
 
@@ -20,8 +21,15 @@ public class Main {
         ComboFacade facade = new ComboFacade();
         
         while (continuar) {
+            int escolha;
             System.out.print("\nSua escolha: ");
-            int escolha = scanner.nextInt();
+            try{ //Tratamento para maldade do professor
+                escolha = scanner.nextInt();
+            } catch (InputMismatchException e) {
+                escolha = -1;
+                scanner.next(); 
+            }
+            
             
             if (escolha == 0) {
                 System.out.println("Obrigado pela preferência!");
