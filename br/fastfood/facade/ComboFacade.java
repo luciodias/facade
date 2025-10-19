@@ -8,7 +8,12 @@ import br.fastfood.model.Sobremesa;
 
 public class ComboFacade {
     private Combo combo;
-
+    /**
+     * Cria um combo baseado no código fornecido.
+     * 
+     * @param codigo o código do combo (1=Master, 2=Super, 3=Kids)
+     * @throws IllegalArgumentException se o código for inválido
+     */
     public void criarCombo(int codigo) {
         switch (codigo) {
             case 1:
