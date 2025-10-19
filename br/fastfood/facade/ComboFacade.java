@@ -51,23 +51,23 @@ public class ComboFacade {
      */
     public void exibirItens() {
         if (combo == null) {
-            System.out.println("Nenhum combo criado ainda!");
+            System.out.println("⚠️  Nenhum combo criado ainda!");
             return;
         }
-        
-        System.out.println("\n=== Detalhes do Pedido ===");
-        exibirItem("Burger", combo.getBurger());
-        exibirItem("Bebida", combo.getBebida());
-        exibirItem("Sobremesa", combo.getSobremesa());
-        System.out.println("==========================");
+        System.out.println();
+        System.out.println("=========== Detalhes do Pedido ===========");
+        exibirItem("🍔 Burger", combo.getBurger());
+        exibirItem("🥤 Bebida", combo.getBebida());
+        exibirItem("🍰 Sobremesa", combo.getSobremesa());
+        System.out.println("==========================================");
     }
 
     /**
      * Exibe cada item do combo
      */
     private void exibirItem(String tipo, ItemCombo item) {
-        System.out.printf("%-12s: %s - R$ %.2f%n", 
-                        tipo, item.getNome(), item.getPreco());
+        System.out.printf("%-12s : %-14s R$ %7s%n", 
+                        tipo, item.getNome(), String.format("%.2f",item.getPreco()));
     }
     
     /**

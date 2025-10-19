@@ -9,13 +9,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("╔════════════════════════════════╗");
-        System.out.println("║   LANCHONETE FAST-FOOD        ║");
+        System.out.println("║    LANCHONETE FAST-FOOD        ║");
         System.out.println("╚════════════════════════════════╝");
-        System.out.println("\n=== MENU DE COMBOS ===");
-        System.out.println("1 - Combo Master    (R$ 35,90)");
-        System.out.println("2 - Super Combo     (R$ 32,50)");
-        System.out.println("3 - Combo Kids      (R$ 22,90)");
-        System.out.println("0 - Sair");
+        System.out.println();
+        System.out.println("=== MENU DE COMBOS ===");
+        System.out.println("1️⃣   Combo Master ");
+        System.out.println("2️⃣   Super Combo  ");
+        System.out.println("3️⃣   Combo Kids   ");
+        System.out.println("0️⃣   Sair         ");
         
         boolean continuar = true;
         ComboFacade facade = new ComboFacade();
